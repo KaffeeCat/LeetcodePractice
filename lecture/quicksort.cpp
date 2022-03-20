@@ -32,7 +32,7 @@ int partition(int* arr, int low, int high)
         arr[high] = arr[low]; // 直至arr[low] > pivot，将其移至arr[high]
     }
 
-    // 经过上面的操作，右移的low与左移的high相遇，将pivot放置此位
+    // 直至low >= high结束循环时，右移的low与左移的high相遇，将pivot放置此位
     arr[low] = pivot;
     return low;
 }
@@ -59,6 +59,7 @@ int main(int argc, char** argv)
 {
     int arr[] = {10, 7, 8, 9, 1, 5};
     int n = sizeof(arr) / sizeof(arr[0]);
+    display(vector<int>(begin(arr), end(arr)));
 
     // 快速排序
     quickSort(arr, 0, n-1);
