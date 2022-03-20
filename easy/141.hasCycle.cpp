@@ -12,13 +12,6 @@
 // 链接：https://leetcode-cn.com/problems/linked-list-cycle
 ///////////////////////////////////////////////////
 
-struct ListNode
-{
-    int val;
-    ListNode* next;
-    ListNode(int x):val(x),next(NULL){}
-};
-
 // ------------------------------------------------
 // 方法一：哈希表
 // ------------------------------------------------
