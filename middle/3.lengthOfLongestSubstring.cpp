@@ -14,8 +14,6 @@
 // https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/solution/hua-dong-chuang-kou-by-powcai/
 ///////////////////////////////////////////////////
 
-#include <unordered_set>
-
 int lengthOfLongestSubstring(string s) 
 {
     int n = s.size();
